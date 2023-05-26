@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*    */
+/* 引入思源黑體 API */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+/* 將所有元素的字型設定成思源黑體，並讓文字以更平滑的方式來呈現 */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+.container
+{
+  max-width: 1344px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item
+{
+  border: 1px solid #f2f2f2;
+  width: 30%;
+  margin: 0 10px 25px;
+}
+
+.item_img
+{
+  width: 100%;  
+  border-radius: 16px 16px 0 0;
+  margin-bottom: 20px;
+}
+
+h2
+{
+  font-size: 20px;
+}
+
+h3
+{
+  font-size: 16px;
+}
+
+.item_title h2{
+  font-weight: bold;
+  margin: 16px 24px 16px 24px;
+}
+
+.item_title p{
+  margin: 16px 24px 16px 24px;
+/*   height: 48px; */
+}
+
+.item_model
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item_model h3{
+  margin: 10px 10px 10px 24px;
+  font-weight: bold;
+}
+
+.item_model p{
+  margin: 10px 24px 10px 10px;
+}
+
+.item_bottom
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item_bottom a{
+  text-decoration: none;
+  color: #000;
+  margin: 10px 10px 10px 24px;
+  padding-left: 16px;
+}
+
+.item_bottom a:hover
+{
+  color: blue;
+}
+
+.item_bottom a{
+  margin: 10px 24px 10px 10px;
+}
