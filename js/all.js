@@ -1,4 +1,3 @@
-
 function myMove(elem,late)
 {
   let id = null;
@@ -58,13 +57,6 @@ $(document).ready(function() {
     $('#scrollToTop').click(function() {
       $('html,body').animate({scrollTop:0}, 'slow');
     });
-
-    $('#arrow1').click(function(){
-      let elem1 = document.querySelector("#arrow1");
-      let pos = 1;
-      elem1.style.top = pos;
-      alert(elem1.style.top);
-    });
   
     let elem1 = document.querySelector("#arrow1");
     let elem2 = document.querySelector("#arrow2");
@@ -74,8 +66,4 @@ $(document).ready(function() {
     myMove(elem2, 30);
     myMove(elem3, 60);
 
-  });
-
-
-
-  
+  });  
