@@ -78,6 +78,7 @@ table {
     margin-right: 312px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 1px solid white;
 }
 
 .AIToolLogo{
@@ -128,10 +129,11 @@ table {
     align-items: center;
 }
 
-.AIStartUse p{
+.AIStartUse a{
     color: white;
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .AIThreeArrow{
@@ -149,6 +151,8 @@ table {
     margin-top: 160px;
     margin-left: 312px;
     margin-right: 312px;
+    margin-bottom: 60px;
+
     display: flex;
     justify-content: space-between;
 }
@@ -211,11 +215,20 @@ table {
 .AIPartnerLogo{
     margin-left: 312px;
     margin-right: 312px;
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    box-sizing: border-box;
     
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;    
+}
+
+.dark-gradient {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #000 1%, #00000000 20% 80%, #000 99%);
 }
 
 .AIPartnerLogo img{
@@ -223,11 +236,7 @@ table {
     margin: 10px;
     padding: 10px;
     width: 180px;
-    height: 45px;
-}
-
-.grad{
-    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.991615) 11.79%, rgba(0, 0, 0, 0.967585) 21.38%, rgba(0, 0, 0, 0.9296) 29.12%, rgba(0, 0, 0, 0.879348) 35.34%, rgba(0, 0, 0, 0.818519) 40.37%, rgba(0, 0, 0, 0.7488) 44.56%, rgba(0, 0, 0, 0.671881) 48.24%, rgba(0, 0, 0, 0.589452) 51.76%, rgba(0, 0, 0, 0.5032) 55.44%, rgba(0, 0, 0, 0.414815) 59.63%, rgba(0, 0, 0, 0.325985) 64.66%, rgba(0, 0, 0, 0.2384) 70.88%, rgba(0, 0, 0, 0.153748) 78.62%, rgba(0, 0, 0, 0.0737185) 88.21%, rgba(0, 0, 0, 0) 100%);
+    height: 45px;    
 }
 
 .AIAvatarDiv
@@ -253,6 +262,10 @@ table {
 .AIAvatarItem p{
     color: white;
     font-size: 14px;
+AIAvatarP}
+
+.{
+    height: 215px;
 }
 
 .AIAvatorStar{
@@ -299,6 +312,7 @@ table {
 .AICreateService{
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-top: 158px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -318,10 +332,11 @@ table {
     gap: 16px;
 }
 
-.AIStartUse2 span{
+.AIStartUse2 a{
     color: white;
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .AICreateService p{
@@ -359,8 +374,7 @@ table {
 
 .AIFooter{
     display: flex;
-    justify-content: space-between;
-    flex-direction: flex;
+    align-items: center;
     margin-left: 312px;
     margin-right: 312px;
     padding-top: 40px;
@@ -374,12 +388,9 @@ table {
 
 .AIFooterMenuSub2{
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    align-items: center;
     gap: 20px;
     margin-left: 100px;
-    position: relative;
-    left: -300px;
 }
 
 .AIFooterMenuSub2 a{
@@ -389,7 +400,25 @@ table {
     text-decoration: none;
 }
 
-.AIFooterBack span{
-    font-size: 16px;
+.AIFooterBack{
+    margin-left: auto;
+}
+
+.AIFooterBack a{
+    text-decoration: none;
+}
+
+.AIFooterBack a img{
+    margin-left: 14px;
+}
+
+#scrollToTop{
+    display: block;
     color: white;
+    background-color: #000;
+}
+
+#arrow1, #arrow2, #arrow3{
+    position: relative;
+    /* transition: top 0.5s; */
 }
