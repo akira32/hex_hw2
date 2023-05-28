@@ -64,14 +64,40 @@ table {
 }
 
 /* my */
-.container
+.container{
+  background: white;
+  border-radius: 160px;
+  padding-left: 312px;
+  padding-right: 312px;
+}
+
+.containerSix
 {
-  max-width: 1344px;
-  margin: 0 auto;
-  padding: 24px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 180px;  
+}
+
+.WhiteTitle{
+    padding-top: 160px;
+
+    padding-bottom: 80px;
+}
+
+.WhiteTitle p{
+  color: black;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px,40px,20px,40px;
+  gap: 12px;
+}
+
+.WhiteSearch{
+  width: 1298px;
+  height: 64px;
+  background-color: #F2F2F2;
 }
 
 .item
