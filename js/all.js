@@ -1,69 +1,69 @@
-function myMove(elem,late)
-{
-  let id = null;
-  let countdown = 0;
-  let startRun = false;
-  let downMove = true;
+// function myMove(elem,late)
+// {
+//   let id = null;
+//   let countdown = 0;
+//   let startRun = false;
+//   let downMove = true;
 
-  let pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 5);
-  function frame() 
-  {
-    if (startRun == false)
-    {
-      if (countdown >= late)
-      {
-        pos = 0;
-        startRun = true;
-        countdown = 0;
-      }
-      else
-      {
-        countdown++;
-      }
-    }
-    else if (startRun == true)
-    {
-      if (downMove == false)
-      {
-        pos--;
+//   let pos = 0;
+//   clearInterval(id);
+//   id = setInterval(frame, 5);
+//   function frame() 
+//   {
+//     if (startRun == false)
+//     {
+//       if (countdown >= late)
+//       {
+//         pos = 0;
+//         startRun = true;
+//         countdown = 0;
+//       }
+//       else
+//       {
+//         countdown++;
+//       }
+//     }
+//     else if (startRun == true)
+//     {
+//       if (downMove == false)
+//       {
+//         pos--;
         
-        if (pos < 0)
-        {
-          downMove = true;
-        }
-        elem.style.top = pos + "px";
-        //console.log('up' + pos.toString());
-      } 
-      else if (downMove == true)
-      {
-        pos++; 
+//         if (pos < 0)
+//         {
+//           downMove = true;
+//         }
+//         elem.style.top = pos + "px";
+//         //console.log('up' + pos.toString());
+//       } 
+//       else if (downMove == true)
+//       {
+//         pos++; 
         
-        if (pos >= 160)
-        {
-          downMove = false;          
-        }  
-        elem.style.top = pos + "px";
-        //console.log('down' + pos.toString());
-      }
+//         if (pos >= 160)
+//         {
+//           downMove = false;          
+//         }  
+//         elem.style.top = pos + "px";
+//         //console.log('down' + pos.toString());
+//       }
       
       
-    }
-  }
-}
+//     }
+//   }
+// }
 
-$(document).ready(function() {
-    $('#scrollToTop').click(function() {
-      $('html,body').animate({scrollTop:0}, 'slow');
-    });
+// $(document).ready(function() {
+//     $('#scrollToTop').click(function() {
+//       $('html,body').animate({scrollTop:0}, 'slow');
+//     });
   
-    let elem1 = document.querySelector("#arrow1");
-    let elem2 = document.querySelector("#arrow2");
-    let elem3 = document.querySelector("#arrow3");
+//     let elem1 = document.querySelector("#arrow1");
+//     let elem2 = document.querySelector("#arrow2");
+//     let elem3 = document.querySelector("#arrow3");
 
-    myMove(elem1, 0);
-    myMove(elem2, 30);
-    myMove(elem3, 60);
+//     myMove(elem1, 0);
+//     myMove(elem2, 30);
+//     myMove(elem3, 60);
 
-  });  
+//   });  

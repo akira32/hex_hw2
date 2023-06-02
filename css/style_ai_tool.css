@@ -142,7 +142,7 @@ table {
     margin-right: 312px;
 }
 
-.AIThreeArrow img{
+.AIThreeArrow li img{
     max-width: 100%;
     width: 180px;
 }
@@ -417,7 +417,36 @@ table {
     background-color: #000;
 }
 
-#arrow1, #arrow2, #arrow3{
+/* #arrow1, #arrow2, #arrow3{
     position: relative;
-    /* transition: top 0.5s; */
+    //transition: top 0.5s; 
+} */
+
+.overflow-hidden {
+    overflow: hidden;
 }
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+    }
+    35% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.animation-banner li:nth-child(3) {
+    animation: slide-up 3s 0.7s infinite ease;
+  }
+  .animation-banner li:nth-child(2) {
+    animation: slide-up 3s 1s infinite ease;
+  }
+  .animation-banner li:nth-child(1) {
+    animation: slide-up 3s 1.3s infinite ease;
+  }
