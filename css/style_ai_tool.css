@@ -121,7 +121,7 @@ body {
     align-items: center;
 }
 
-.AIToolMenu a{
+.AIToolMenu li a{
     color: white;
     text-decoration: none;
     margin: 10px;
@@ -209,7 +209,7 @@ body {
     margin-right: 312px;
 }
 
-.AIThreeBox1Div{
+.AIThreeBox1Li{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -374,7 +374,7 @@ body {
     padding: 10px;
 }
 
-.AIHomePrice a{
+.AIHomePrice>li>a{
     color: white;
     font-size: 80px;
     font-weight: bold;
@@ -408,7 +408,7 @@ body {
     margin-left: 100px;
 }
 
-.AIFooterMenuSub2 a{
+.AIFooterMenuSub2>li>a{
     display: block;
     color: white;
     text-decoration: none;
@@ -430,11 +430,6 @@ body {
     color: white;
     background-color: #000;
 }
-
-/* #arrow1, #arrow2, #arrow3{
-    position: relative;
-    //transition: top 0.5s; 
-} */
 
 .overflow-hidden {
     overflow: hidden;
