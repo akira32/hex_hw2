@@ -65,6 +65,28 @@ table {
 
 /* my */
 
+h1{
+    color: white;
+    margin: 10px;
+    font-weight: bold;
+    font-family: "Noto Sans TC";
+    font-style: normal;
+    font-size: 120px;
+    line-height: 120%;
+}
+
+h2{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h6{
+    color: white;
+    font-size: 48px;
+    text-align: center;
+}
+
 body {
     font-family: "Noto Sans TC", sans-serif;
 }
@@ -108,16 +130,6 @@ body {
 .AIWord{
     margin-left: 312px;
     margin-top: 40px;
-}
-
-h1{
-    color: white;
-    margin: 10px;
-    font-weight: bold;
-    font-family: "Noto Sans TC";
-    font-style: normal;
-    font-size: 120px;
-    line-height: 120%;
 }
 
 /* .AIStartUse{
@@ -172,12 +184,6 @@ h1{
 .AIThreeArrow li img{
     max-width: 100%;
     width: 180px;
-}
-
-h2{
-    color: white;
-    font-size: 32px;
-    font-weight: bold;
 }
 
 .AIService{
@@ -331,12 +337,6 @@ h2{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-}
-
-h6{
-    color: white;
-    font-size: 48px;
-    text-align: center;
 }
 
 .AIStartUse2{
