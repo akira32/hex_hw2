@@ -1,68 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*    */
-/* 引入思源黑體 API */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
-
-/* 將所有元素的字型設定成思源黑體，並讓文字以更平滑的方式來呈現 */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  font-family: "Noto Sans TC", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  padding: 0;
-  margin: 0;
-}
-
 /* my */
 .container{
   background: white;
@@ -84,10 +19,11 @@ table {
     padding-bottom: 80px;
 }
 
-.WhiteTitle p{
+h3{
   color: black;
   font-size: 80px;
   font-weight: bold;
+  font-family: "Noto Sans TC";
   text-align: center;
   padding: 20px,40px,20px,40px;
   gap: 12px;
@@ -192,17 +128,17 @@ table {
   margin-bottom: 20px;
 }
 
-h2
+h4
 {
   font-size: 20px;
 }
 
-h3
+h5
 {
   font-size: 16px;
 }
 
-.item_title h2{
+.item_title{
   font-weight: bold;
   margin: 16px 24px 16px 24px;
 }
@@ -219,7 +155,7 @@ h3
   align-items: center;
 }
 
-.item_model h3{
+.item_model{
   margin: 10px 10px 10px 24px;
   font-weight: bold;
 }
@@ -249,4 +185,78 @@ h3
 
 .item_bottom a{
   margin: 10px 24px 10px 10px;
+}
+
+/* dropdown */ 
+
+.fs-normal {
+  font-size: 16px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+
+  font-family: 'Noto Sans TC', sans-serif;
+  line-height: 1.5;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #F2F2F2;
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  border-radius: 16px;
+}
+
+.dropdown-btn:hover {
+  border-color: #000000;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right:0;
+  display: none;
+  margin-top: 4px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  padding: 20px 0;
+  border-radius: 16px;
+}
+
+.dropdown-menu a {
+  padding: 4px 40px;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown-menu.show {
+  display: block;
 }

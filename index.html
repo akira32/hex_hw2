@@ -7,13 +7,11 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
 
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,25 +20,27 @@
     <link rel="stylesheet" href="css/style_ai_tool.css">
     <link rel="stylesheet" href="css/style1.css">
     
+    <title>AI 工具王</title>
+
 </head>
 <body>
     <div class="MainDiv">
         <div class="AIToolDiv">
-            <img class="AIToolLogo"src="images/logo.png" alt="logo.png">
+            <a href="#"><img class="AIToolLogo"src="images/logo.png" alt="logo.png"></a>
             <div class="AIToolMenu">
                 <a href="#">首頁</a>
                 <a href="#">定價</a>
             </div>
         </div>
         <div class="AIWord">
-            <p>透過</p>
-            <p>AI 工具王的</p>
-            <p>強大模型</p>
-            <p>讓您的業務更聰明</p>
+            <h1>透過<br>AI 工具王的<br>強大模型<br>讓您的業務更聰明</h1>
         </div>
-        <div class="AIStartUse">
+        <!-- <div class="AIStartUse">
             <a href="#">開始使用</a>
-        </div>
+        </div> -->
+      
+        <a class="AIStartUseNew" href="#">開始使用</a>
+
         <!-- <div class="AIThreeArrow">
             <img id="arrow1" src="images/deco.png" alt="deco">
             <img id="arrow2" src="images/deco.png" alt="deco">
@@ -53,11 +53,9 @@
         </ul>
         
         <div class="AIService">
-            <p>我們的服務</p>
+            <h2>我們的服務</h2>
             <div>
-                <p>我們相信透過 AI 技術，</p>
-                <p>包括圖像識別、自然語言處理和機器翻</p>
-                <p>譯等，讓您更快、更準確地做出決策。</p>
+                <p>我們相信透過 AI 技術，<br>包括圖像識別、自然語言處理和機器翻<br>譯等，讓您更快、更準確地做出決策。</p>
             </div>
         </div>
         <div class="AIThreeBox1">
@@ -79,7 +77,7 @@
             
         </div>
         <div class="AIPartnerTitle">
-            <p>來自合作夥伴</p>
+            <h2>來自合作夥伴</h2>
         </div>
         <div class="AIPartnerLogo">
             <div class="dark-gradient"></div>
@@ -158,7 +156,7 @@
         <div class="container">
 
             <div class="WhiteTitle">
-                <p>這些超酷的應用，都來自 AI工具王</p>
+                <h3>這些超酷的應用，都來自 AI工具王</h3>
             </div>
 
             <div class="WhiteSearch">
@@ -166,7 +164,7 @@
                     <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#919191"/>
                     </svg>
                     
-                <input type="text" placeholder="輸入關鍵字搜尋">
+                <input type="search" placeholder="輸入關鍵字搜尋">
             </div>
 
             <div class="WhiteFilter">
@@ -182,21 +180,39 @@
                     <li><a href="#">客服</a></li>
                     <li><a href="#">生產力</a></li>
                 </ul>
-                <a href="#">
-                    <span class="material-icons">由新到舊 keyboard_arrow_down</span>
-                </a>
+                <!-- <a href="#">
+                    <span class="material-icons">由新到舊 keyboard_arrow_down</span>        
+                </a> -->
+                <div class="filter mt-8">
+                    <div class="dropdown">
+                        <button type="button" class="dropdown-btn fs-normal">
+                            <span class="dropdown-btnText">由新到舊</span>
+                            <span class="material-icons fs-normal ml-12">
+                            expand_more
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="mb-8">
+                            <a href="#" class="new-to-old">由新到舊</a>
+                            </li>
+                            <li>
+                            <a href="#" class="old-to-new">由舊到新</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         
             <div class="containerSix">    
                 <div class="item">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool1.png?raw=true" alt="Chatbot Builder" class="item_img">
                     <div class="item_title">
-                        <h2>Chatbot Builder</h2>
+                        <h4>Chatbot Builder</h4>
                         <p>建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
                     </div>
                 
                     <div class="item_model">
-                        <h3>AI 模型</h3>
+                        <h5>AI 模型</h5>
                         <p>卡卡</p>
                     </div>
                     
@@ -211,12 +227,12 @@
                 <div class="item">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool2.png?raw=true" alt="Image Recognition Platform" class="item_img">
                     <div class="item_title">
-                        <h2>Image Recognition Platform</h2>
+                        <h4>Image Recognition Platform</h4>
                         <p>專業的圖像識別平台，識別圖像、分類、標記等。</p>
                     </div>
                 
                     <div class="item_model">
-                        <h3>AI 模型</h3>
+                        <h5>AI 模型</h5>
                         <p>杰杰</p>
                     </div>
                     
@@ -230,12 +246,12 @@
                 <div class="item">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool3.png?raw=true" alt="Language Translation API" class="item_img">
                     <div class="item_title">
-                        <h2>Language Translation API</h2>
+                        <h4>Language Translation API</h4>
                         <p>專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。</p>
                     </div>
                 
                     <div class="item_model">
-                        <h3>AI 模型</h3>
+                        <h5>AI 模型</h5>
                         <p>琪琪</p>
                     </div>
                 
@@ -249,12 +265,12 @@
                 <div class="item">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool4.png?raw=true" alt="Sentiment Analysis API" class="item_img">
                     <div class="item_title">
-                        <h2>Sentiment Analysis API</h2>
+                        <h4>Sentiment Analysis API</h4>
                         <p>自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
                     </div>
                 
                     <div class="item_model">
-                        <h3>AI 模型</h3>
+                        <h5>AI 模型</h5>
                         <p>昊昊</p>
                     </div>
                 
@@ -268,12 +284,12 @@
                 <div class="item">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool5.png?raw=true" alt="Fraud Detection Platform" class="item_img">
                     <div class="item_title">
-                        <h2>Fraud Detection Platform</h2>
+                        <h4>Fraud Detection Platform</h4>
                         <p>預防詐騙活動，適用於銀行、金融、電商等。</p>
                     </div>
                     
                     <div class="item_model">
-                        <h3>AI 模型</h3>
+                        <h5>AI 模型</h5>
                         <p>卡卡</p>
                     </div>
                 
@@ -287,12 +303,12 @@
                 <div class="item">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool6.png?raw=true" alt="Voice Assistant SDK" class="item_img">
                     <div class="item_title">
-                        <h2>Voice Assistant SDK</h2>
+                        <h4>Voice Assistant SDK</h4>
                         <p>通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
                     </div>
                     
                     <div class="item_model">
-                        <h3>AI 模型</h3>
+                        <h5>AI 模型</h5>
                         <p>杰杰</p>
                     </div>
                 
@@ -317,7 +333,7 @@
         <!-- hw1 end -->
 
         <div class="AICreateService">
-            <p>現在就來建立屬於你的服務吧</p>
+            <h6>現在就來建立屬於你的服務吧</h6>
 
             <div class="AIStartUse2">
                 <a href="#">開始使用</a>
@@ -329,8 +345,8 @@
 
         <div class="AIPriceDiv">
             <div class="AIHomePrice">
-                <p>首頁</p>
-                <p>定價</p>
+                <a href="#">首頁</a><br>
+                <a href="#">定價</a>
             </div>
             <img src="images/logo.png" alt="">
         </div>
