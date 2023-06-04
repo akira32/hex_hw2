@@ -67,3 +67,26 @@
 //     myMove(elem3, 60);
 
 //   });  
+
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1, /*不足576px顯示單欄*/
+    spaceBetween: 24,
+    breakpoints: {
+      375:{
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        },
+      767: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      992: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });

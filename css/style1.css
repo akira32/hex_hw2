@@ -11,11 +11,9 @@ h5
   font-size: 16px;
 }
 
-.container{
+.WhiteMainDiv{
   background: white;
   border-radius: 160px;
-  padding-left: 312px;
-  padding-right: 312px;
 }
 
 .containerSix
@@ -23,7 +21,8 @@ h5
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 40px;  
+  padding-left: 18%;
+  padding-right: 18%; 
 }
 
 .WhiteTitle{
@@ -42,10 +41,12 @@ h3{
 }
 
 .WhiteSearch{
-  width: 1298px;
+  width: 64%;
   height: 64px;
   background-color: #F2F2F2;
   margin-bottom: 24px;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 
 .WhiteSearch svg{
@@ -66,6 +67,8 @@ h3{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 
 .WhiteFilter .material-icons {
@@ -135,8 +138,7 @@ h3{
   padding: 12px;
 }
 
-.item
-{
+.item{
   border: 1px solid #f2f2f2;
   width: 30%;
   margin: 0 10px 25px;
@@ -206,9 +208,9 @@ h3{
 
 @media (max-width:992px){
 
-  .MainDiv{
-    padding-left: 25%;
-    padding-right: 25%;
+  .BlackDiv{
+    padding-left: 18%;
+    padding-right: 18%;
   }
 
   h1{
@@ -250,13 +252,51 @@ h3{
     width: 416px;
     height: 366px;
   }
+
+  /* white start */
+  .WhiteTitle{
+    padding-top: 160px;
+    padding-bottom: 80px;
+  }
+  
+  h3{
+    font-size: 80px;
+  }
+
+  .WhiteMainDiv{
+    border-radius: 160px;
+  }
+
+  .item{
+    width: 30%;
+    margin: 0 10px 25px;
+  }
+
+  .containerSix
+  {
+    padding-left: 18%;
+    padding-right: 18%; 
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 162px;
+  }
+
+  .AIPriceDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 @media (max-width:767px){
 
-  .MainDiv{
-    padding-left: 15%;
-    padding-right: 15%;
+  .BlackDiv{
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   h1{
@@ -298,11 +338,48 @@ h3{
     width: 351px;
     height: 286px;
   }
+
+  .WhiteTitle{
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  
+  h3{
+    font-size: 32px;
+  }
+
+  .WhiteMainDiv{
+    border-radius: 40px;
+  }
+
+  .item{
+    width: 45%;
+    margin: 0 5px 10px;
+  }
+
+  .containerSix
+  {
+    padding-left: 8%;
+    padding-right: 8%; 
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    padding-bottom: 100px;
+  }
+
+  .AIPriceDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
+/* 375 */
+@media (max-width:482px){
 
-@media (max-width:375px){
-
-  .MainDiv{
+  .BlackDiv{
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -318,6 +395,7 @@ h3{
   .AIToolMenu{
     display: none;
   }
+
   .AIMenuIcon{
     display: block;
   }
@@ -345,5 +423,44 @@ h3{
   .AIThreeBox1Li{
     width: 351px;
     height: 286px;
+  }
+
+  .WhiteTitle{
+    padding-top: 80px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  
+  h3{
+    font-size: 32px;
+  }
+
+  .WhiteMainDiv{
+    border-radius: 20px;
+  }
+
+  .item{
+    width: 80%;
+    margin: 0px;
+  }
+
+  .containerSix
+  {
+    padding-left: 1%;
+    padding-right: 1%; 
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    padding-bottom: 80px;
+  }
+
+  .AIPriceDiv{
+    display: flex;
+    justify-content: column;
+    flex-direction: column-reverse;
   }
 }

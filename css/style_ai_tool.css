@@ -64,6 +64,9 @@ table {
 }
 
 /* my */
+body{
+    background: #000;
+}
 
 h1{
     color: white;
@@ -91,11 +94,13 @@ body {
     font-family: "Noto Sans TC", sans-serif;
 }
 
-.MainDiv{
+.container{
     margin: 0 auto;
-    background-color: #000;
-    padding-left: 312px;
-    padding-right: 312px;
+}
+
+.BlackDiv{
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .parent{
@@ -263,10 +268,15 @@ body {
 
 .AIAvatarDiv
 {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
+    /* display: flex;
+    justify-content: space-around; */
+    /* padding: 10px; */
     gap: 24px;
+}
+
+.AIAvatarDiv p{
+    color: white;
+    line-height: 150%;
 }
 
 .AIAvatarItem
@@ -276,7 +286,6 @@ body {
     background: rgba(255, 255, 255, 0.08);
     box-shadow: 0px 100px 80px rgba(18, 18, 18, 0.07), 0px 41.7776px 33.4221px rgba(18, 18, 18, 0.0503198), 0px 22.3363px 17.869px rgba(18, 18, 18, 0.0417275), 0px 12.5216px 10.0172px rgba(18, 18, 18, 0.035), 0px 6.6501px 5.32008px rgba(18, 18, 18, 0.0282725), 0px 2.76726px 2.21381px rgba(18, 18, 18, 0.0196802);
     border-radius: 16px;
-    padding: 40px;
 }
 
 .AIAvatarItem p{
@@ -284,13 +293,40 @@ body {
     font-size: 14px;
 }
 
-.AIAvatorStar{
-    margin-bottom: 20px;
+.AIPpageNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
-.AIAvatarDiv p{
-    color: white;
-    line-height: 150%;
+/* swiper start */
+.swiper {
+    padding-bottom: 48px;
+}
+  
+.swiper-pagination.swiper-pagination-bullets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px; /*元素底部邊緣與區塊底部的距離*/
+}
+  
+.swiper-pagination-bullet {
+    background-color: #525252;
+    opacity: 1;
+}
+  
+.swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+}
+
+/* swpier end */
+  
+.AIAvatorStar{
+    margin-bottom: 20px;
 }
 
 .AIAvatorHead{
@@ -320,7 +356,6 @@ body {
 }
 
 .AICreateService{
-    margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 158px;
     display: flex;
@@ -352,6 +387,7 @@ body {
 .AIPriceDiv{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     padding-top: 80px;
