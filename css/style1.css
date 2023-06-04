@@ -203,3 +203,65 @@ h3{
 .item_bottom a{
   margin: 10px 24px 10px 10px;
 }
+
+@media (max-width:992px){
+
+  .MainDiv{
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .AIToolMenu{
+    display: block;
+  }
+
+  .AIMenuIcon{
+    display: none;
+  }
+
+  .AIToolLogo{
+    width: 240px;
+    height: 40px;
+  }
+}
+
+@media (max-width:767px){
+
+  .MainDiv{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .AIToolMenu{
+    display: none;
+  }
+  .AIMenuIcon{
+    display: block;
+  }
+
+  .AIToolLogo{
+    width: 180px;
+    height: 30px;
+  }
+}
+
+@media (max-width:375px){
+
+  .MainDiv{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .AIToolMenu{
+    display: none;
+  }
+  .AIMenuIcon{
+    display: block;
+  }
+
+  .AIToolLogo{
+    width: 120px;
+    height: 20px;
+  }
+
+}

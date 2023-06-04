@@ -92,17 +92,20 @@ body {
 }
 
 .MainDiv{
-    /* max-width: 1920px; */
     margin: 0 auto;
     background-color: #000;
+    padding-left: 312px;
+    padding-right: 312px;
+}
+
+.parent{
+    max-width: 1296px;
 }
 
 .AIToolDiv{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 312px;
-    margin-right: 312px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid white;
@@ -127,8 +130,11 @@ body {
     margin: 10px;
 }
 
+.AIMenuIcon{
+    display: none;
+}
+
 .AIWord{
-    margin-left: 312px;
     margin-top: 40px;
 }
 
@@ -157,7 +163,6 @@ body {
 {
     margin-top: 40px;
     margin-bottom: 40px;    
-    margin-left: 312px;
     margin-top: 40px;
     border: 1px solid white;
     border-radius: 16px;
@@ -178,7 +183,6 @@ body {
 .AIThreeArrow{
     display: flex;
     justify-content: end;
-    margin-right: 312px;
 }
 
 .AIThreeArrow li img{
@@ -188,8 +192,6 @@ body {
 
 .AIService{
     margin-top: 160px;
-    margin-left: 312px;
-    margin-right: 312px;
     margin-bottom: 60px;
 
     display: flex;
@@ -205,9 +207,7 @@ body {
 .AIThreeBox1{
     display: flex;
     justify-content: space-around;
-    margin-left: 312px;
-    margin-right: 312px;
-}
+ }
 
 .AIThreeBox1Li{
     box-sizing: border-box;
@@ -233,15 +233,11 @@ body {
 }
 
 .AIPartnerTitle{
-    margin-left: 312px;
     margin-top: 120px;
     margin-bottom: 60px;
 }
 
 .AIPartnerLogo{
-    margin-left: 312px;
-    margin-right: 312px;
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -269,8 +265,6 @@ body {
 {
     display: flex;
     justify-content: space-around;
-    margin-left: 312px;
-    margin-right: 312px;
     padding: 40px;
     gap: 24px;
 }
@@ -362,8 +356,6 @@ body {
 .AIPriceDiv{
     display: flex;
     justify-content: space-between;
-    margin-left: 312px;
-    margin-right: 312px;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     padding-top: 80px;
@@ -390,8 +382,6 @@ body {
 .AIFooter{
     display: flex;
     align-items: center;
-    margin-left: 312px;
-    margin-right: 312px;
     padding-top: 40px;
     padding-bottom: 40px;
 }
