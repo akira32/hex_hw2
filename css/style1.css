@@ -56,6 +56,7 @@ h3{
 .WhiteFilter{
   margin-bottom: 3%;/*40px*/
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -154,11 +155,13 @@ h3{
 }
 
 .item_title{
-  margin: 16px 24px 16px 24px;
+  /* margin: 16px 24px 16px 24px; */
+  margin: 2% 3% 2% 3%;
 }
 
 .item_title p{
-  margin: 16px 24px 16px 24px;
+  /* margin: 16px 24px 16px 24px; */
+  margin: 2% 3% 2% 3%;
 /*   height: 48px; */
 }
 
@@ -254,6 +257,7 @@ h3{
   .AIService{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .AIService div p{
@@ -319,12 +323,8 @@ h3{
     order: 3;
   }
 
-  .WhiteFilter{
-    margin-bottom: 3%;/*40px*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  .AIService>h2{
+    width: 35%;
   }
 }
 
@@ -430,10 +430,14 @@ h3{
   .num-3{
     order: 2;
   }
+
+  .AIService>h2{
+    width: 30%;
+  }
 }
 
-/* 375 */
-@media (max-width:482px){
+/* 375 => 482*/
+@media (max-width:582px){
 
   .BlackDiv{
     padding-left: 0px;
@@ -537,5 +541,9 @@ h3{
   
   .num-3{
     order: 2;
+  }
+
+  .AIService>h2{
+    width: 40%;
   }
 }

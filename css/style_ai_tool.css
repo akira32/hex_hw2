@@ -95,7 +95,7 @@ body {
 }
 
 .container{
-    max-width: 1296px;
+    /* max-width: 1296px; */
     margin: 0 auto;
 }
 
@@ -198,12 +198,20 @@ body {
 
     display: flex;
     justify-content: space-between;
+    align-items: row;
 }
 
-.AIService div p{
+.AIService>h2{
+    width: 20%;
+    margin: 3%;
+}
+
+.AIService>div>p{
+    width: 70%;
     color: white;
     font-size: 48px;
     font-weight: bold;
+    margin: 3%;
 }
 
 .AIThreeBox1{
@@ -410,6 +418,8 @@ body {
 
 .AIFooter{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
     padding-top: 3%;/*40px;*/
     padding-bottom: 3%;/*40px;*/
@@ -418,6 +428,9 @@ body {
 .AIFooterMenuSub1{
     color: white;
     font-size: 18px;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .AIFooterMenuSub2{
@@ -425,6 +438,9 @@ body {
     align-items: center;
     gap: 20px;
     margin-left: 8%;/*100px*/
+
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .AIFooterMenuSub2>li>a{
@@ -435,6 +451,9 @@ body {
 
 .AIFooterBack{
     margin-left: auto;
+
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 .AIFooterBack a{
     text-decoration: none;
