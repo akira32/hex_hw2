@@ -140,6 +140,10 @@ body {
     margin-top: 40px;
 }
 
+.cardDiv{
+    margin-bottom: 20px;
+}
+
 /* .AIStartUse{
     margin-top: 40px;
     margin-bottom: 40px;    
@@ -252,7 +256,8 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
-    position: relative;    
+    position: relative;
+    margin-bottom: 15%;    
 }
 
 .dark-gradient {
@@ -469,9 +474,10 @@ body {
     background-color: #000;
 }
 
-.overflow-hidden {
-    overflow: hidden;
+.d-lg-inline {
+    display: inline;
 }
+
 
 @keyframes slide-up {
     0% {
